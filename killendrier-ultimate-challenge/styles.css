@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #E3202A;
+
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.2;
+    font-family: 'Seaweed Script', cursive;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: 'Seaweed Script', cursive;
+    font-weight: normal;
+    text-align: center;
+}
+
+p {
+    margin: 20px 0;
+}
+
+a {
+    color: inherit;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.o-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.o-container--full {
+    max-width: none;
+}
+
+.o-flow-m {
+    margin-top: 40px;
+}
+
+.o-flow-s {
+    margin-top: 20px;
+}
+
+.c-page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-page__header {
+    flex: none;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.c-page__body {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.c-page__body--top {
+    justify-content: flex-start;
+}
+
+.c-page__footer {
+    flex: none;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 1px solid black;
+
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    font-style: italic;
+}
+
+.c-control {
+    display: block;
+    padding-top: 20px;
+}
+
+.c-control__label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.c-control__input {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid black;
+}
+
+.c-control__error {
+    display: block;
+    padding-top: 10px;
+    font-style: italic;
+}
+
+.c-control__error:empty {
+    display: none;
+}
+
+.c-action {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.c-action--no-wrap {
+    flex-wrap: nowrap;
+}
+
+.o-action__caption {
+    width: 100%;
+    text-align: center;
+}
+
+.c-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    background: black;
+
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font: inherit;
+    font-style: normal;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.c-button__icon {
+    height: 40px;
+    fill: currentColor;
+}
+
+.c-button--fluid {
+    flex: 1 0;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.c-button:hover,
+.c-button:focus {
+    background: transparent;
+}
+
+.c-button--shadow {
+    background: transparent;
+    border-color: transparent;
+    color: inherit;
+}
+
+.c-button--shadow:hover,
+.c-button--shadow:focus {
+    background: black;
+    border-color: black;
+    color: white;
+}
+
+/* PODIUM */
+
+.c-podium-table {
+    width: 100%;
+    margin: auto;
+    border-spacing: 0;
+
+    font-size: 20px;
+}
+
+.c-podium-table tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+.c-podium-table td {
+    padding: 2px 10px;
+}
+
+/* UTILS */
+
+.u-txt-center {
+    text-align: center !important;
+}
+
+.u-txt-sanglant {
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Seaweed Script', cursive;
+    font-weight: normal;
+}
+
+@media (max-width: 599px) {
+    .u-mq-min-600 {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .u-mq-max-600 {
+        display: none;
+    }
+}
+
+.u-emoji {
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'apple color emoji', 'segoe ui emoji', 'noto color emoji',
+    'android emoji', emojisymbols, 'emojione mozilla', 'twemoji mozilla',
+    'segoe ui symbol', serif;
+}
+
+.u-button-hidden {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
+
+    user-select: inherit;
+    cursor: pointer;
+}
+
+.u-button-hidden:hover {
+    background: black;
+    color: white;
+}
+
+.u-button-full-width {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.u-tr-diabled {
+    color: #4d4d4d;
+    font-style: italic;
+    text-decoration: line-through;
+    user-select: none;
+}
